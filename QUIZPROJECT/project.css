@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    background-color: #000000;
+  }
+  
+   .start-screen,.score-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #start-button,
+  #restart {
+    font-size: 40px;
+    padding:10px 40px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+    color: #4708da;
+   
+  }
+  #start-button:hover{
+      color: white;
+      background-color:#4708da ;
+  }
+  #restart:hover{
+      color: white;
+      background-color:#4708da ;
+  }
+  #restart {
+    margin-top: 40px;
+  }
+  #display-container {
+    background-color: #ffffff;
+    padding: 30px 30px;
+    width: 80%;
+    max-width: 37.5em;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+  }
+  .header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+  }
+  .timer-div {
+    background-color: #5ec3f1;
+    width: 6.5em;
+    border-radius: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:10px 10px;
+  }
+  .question {
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  .option-div {
+    font-size: 0.9em;
+    width: 100%;
+    padding: 1em;
+    margin: 0.3em 0;
+    outline: none;
+    text-align: left;
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 0.3em;
+  }
+  .option-div:disabled {
+    color: #000000;
+    cursor: not-allowed;
+  }
+  #next-button {
+    font-size: 1em;
+    margin-top: 1.5em;
+    background-color: #ffffff ;
+    color:#4b09e4;
+    padding: 0.7em 1.8em;
+    border-radius: 0.3em;
+    float: right;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  #next-button:hover{
+      background-color: #4b09e4;
+      color: #ffffff ;
+
+  }
+  .hide {
+    display: none;
+  }
+  .incorrect {
+    background-color: #ffdde0;
+    color: #ff0000;
+    border-color: #f60000;
+  }
+  .correct {
+    background-color: #e7f6d5;
+    color: #6ddf09;
+    border-color: #71f100;
+  }
+  #user-score {
+    font-size:40px ;
+    font-weight: 500;
+    color: #ffffff;
+  }  
